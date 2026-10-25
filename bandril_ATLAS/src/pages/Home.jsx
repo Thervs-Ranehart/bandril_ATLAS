@@ -6,7 +6,7 @@ export default function Home() {
             <section className="flex min-h-[80vh] items-center justify-center px-6">
                 <div className="max-w-4xl text-center">
                     {/* Main Heading */}
-                    <h1 ckassName="text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl">
+                    <h1 className="text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl">
                         Welcome to the
                         <span className="block bg-gradient-to-r-from-red-400 via-red-300 to-orange-300 bg-clip-text text-transparent">
                             Student Portal

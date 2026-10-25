@@ -5,7 +5,7 @@ export default function FacultyList() {
     const [faculty, setFaculty] = useState([]);
 
     useEffect(() => {
-        fetch("http:/localhost:5000/api/faculty")
+        fetch("http://localhost:5000/api/faculty")
         .then(response => response.json())
         .then(data => setFaculty(data));
     }, []);
@@ -20,7 +20,7 @@ export default function FacultyList() {
         <div className="min-h-screen bg-slate-950 px-6 pt-10 text-white">
             {/* Header */}
             <div className="mx-auto mb-8 max-w-5xl">
-                <p className="mb-2 text-sm font-semibold uppercase tracking-wideset text-red-400">
+                <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-red-400">
                     Faculty Information
                 </p>
 
@@ -50,8 +50,8 @@ export default function FacultyList() {
                     <h2 className="font-semibold">Registered Faculty</h2>
                 </div>
 
-                <div className="overflow-x-aiuto p-4">
-                    <DataTable data={faculty} columns={columns}/>   
+                <div className="overflow-x-auto p-4">
+                    <DataTable data={faculty} columns={columns} />
                 </div>
             </div>
         </div>
