@@ -5,7 +5,7 @@ export default function FacultyList() {
     const [faculty, setFaculty] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/api/faculty")
+        fetch("http://localhost:5000/api/faculties")
         .then(response => response.json())
         .then(data => setFaculty(data));
     }, []);

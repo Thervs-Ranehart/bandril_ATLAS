@@ -25,8 +25,8 @@ app.get("/api/students", async (req, res)=> {
     res.json(students)  
 })
 
-app.get("/api/faculty", async (req, res)=> {
-    const faculty = await Faculty1.find();
+app.get("/api/faculties", async (req, res)=> {
+    const faculty = await Faculty.find();
     res.json(faculty)  
 })
 
